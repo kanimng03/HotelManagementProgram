@@ -69,6 +69,18 @@
     <Compile Include="Users\Users_AddRoom.Designer.cs">
       <DependentUpon>Users_AddRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="Users\Users_Customers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Users_Customers.Designer.cs">
+      <DependentUpon>Users_Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Users_Pay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Users_Pay.Designer.cs">
+      <DependentUpon>Users_Pay.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +98,12 @@
     </Compile>
     <EmbeddedResource Include="Users\Users_AddRoom.resx">
       <DependentUpon>Users_AddRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Users_Customers.resx">
+      <DependentUpon>Users_Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Users_Pay.resx">
+      <DependentUpon>Users_Pay.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

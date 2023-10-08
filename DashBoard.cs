@@ -17,19 +17,27 @@ namespace HotelManagementProgram
             InitializeComponent();
         }
 
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void DashBoard_Load(object sender, EventArgs e)
+        {
+            users_AddRoom1.Visible = false;
+            btnRoom.PerformClick();
+        }
+
+        private void btnRoom_Click(object sender, EventArgs e)
+        {
+            users_AddRoom1.Visible = true;
+            users_AddRoom1.BringToFront();
+        }
+
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            users_Customers1.Visible = true;
+            users_Customers1.BringToFront();
         }
     }
 }
