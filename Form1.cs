@@ -16,19 +16,31 @@ namespace HotelManagementProgram
         {
             InitializeComponent();
         }
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void Login()
         {
             if (txtUser.Text == "KN" && txtPass.Text == "123")
             {
                 lblError.Visible = false;
-                DashBoard db = new DashBoard();
+                DashBoard ds = new DashBoard();
                 this.Hide();
-                db.Show();
+                ds.Show();
             }
             else
             {
                 lblError.Visible = true;
                 txtPass.Clear();
+            }
+        }
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            Login();
+        }
+
+        private void txtPass_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                Login();
             }
         }
         private void btnExit_Click(object sender, EventArgs e)
@@ -46,7 +58,6 @@ namespace HotelManagementProgram
 
         }
 
-        
-        
+       
     }
 }

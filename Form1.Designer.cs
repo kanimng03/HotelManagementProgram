@@ -58,13 +58,13 @@
             // lblError
             // 
             this.lblError.BackColor = System.Drawing.Color.Transparent;
-            this.lblError.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(143, 528);
+            this.lblError.Location = new System.Drawing.Point(152, 529);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(281, 25);
+            this.lblError.Size = new System.Drawing.Size(254, 24);
             this.lblError.TabIndex = 6;
-            this.lblError.Text = "Username or Password is wrong";
+            this.lblError.Text = "Invalid password or username!";
             this.lblError.Visible = false;
             // 
             // btnLogin
@@ -110,6 +110,7 @@
             this.txtPass.SelectedText = "";
             this.txtPass.Size = new System.Drawing.Size(415, 67);
             this.txtPass.TabIndex = 4;
+            this.txtPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPass_KeyPress);
             // 
             // txtUser
             // 

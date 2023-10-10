@@ -12,14 +12,58 @@ namespace HotelManagementProgram.Users
 {
     public partial class Users_AddRoom : UserControl
     {
+        function fn = new function();
+        String query;
+
         public Users_AddRoom()
         {
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void Users_AddRoom_Load(object sender, EventArgs e)
         {
+            query = "select * from rooms";
+            DataSet ds = fn.getData(query);
+            dgvRoom.DataSource = ds.Tables[0]; 
+        }
 
+        private void btnAddRoom_Click(object sender, EventArgs e)
+        {
+            if(txtRNum.Text != "" &&  txtRType.Text != "" && txtBed.Text != "" && txtPrice.Text != "")
+            {
+                String roomNo = txtRNum.Text;
+                String roomType = txtRType.Text;
+                String bed = txtBed.Text;
+                Int64 price = Int64.Parse(txtPrice.Text);
+
+                query = "insert into rooms (roomNo, roomType, bed, price) values ('" + roomNo + "','" + roomType  +"', '" + bed  +"', " + price + ")";
+                fn.setData(query, "Đã thêm phòng!");
+
+                Users_AddRoom_Load(this, null);
+                clearAll();
+            }
+            else
+            {
+                MessageBox.Show("Something went wrong...", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        public void clearAll()
+        {
+            txtRNum.Clear();
+            txtRType.SelectedIndex = -1;
+            txtBed.SelectedIndex = -1;
+            txtPrice.Clear();
+        }
+
+        private void dgvRoom_Leave(object sender, EventArgs e)
+        {
+            clearAll();
+        }
+
+        private void dgvRoom_Enter(object sender, EventArgs e)
+        {
+            Users_AddRoom_Load(this, null);
         }
     }
 }
