@@ -37,7 +37,7 @@ namespace HotelManagementProgram.Users
                 Int64 price = Int64.Parse(txtPrice.Text);
 
                 query = "insert into rooms (roomNo, roomType, bed, price) values ('" + roomNo + "','" + roomType  +"', '" + bed  +"', " + price + ")";
-                fn.setData(query, "Đã thêm phòng!");
+                fn.setData(query, "Successful new room creation!");
 
                 Users_AddRoom_Load(this, null);
                 clearAll();

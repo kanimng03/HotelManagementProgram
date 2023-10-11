@@ -44,7 +44,7 @@ namespace HotelManagementProgram
             MessageBox.Show(message, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        public SqlDataReader getForCombo(String query)
+        public SqlDataReader getForComboBox(String query)
         {
             SqlConnection conn = getConnection();
             SqlCommand cmd = new SqlCommand();
