@@ -15,7 +15,7 @@ namespace HotelManagementProgram
         protected SqlConnection getConnection()
         {
             SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Administrator\\Documents\\dbHotelManagement.mdf;Integrated Security=True;Connect Timeout=30";
+            conn.ConnectionString = "Data Source=DESKTOP-CEKF3RJ\\HUY;Initial Catalog=dbMyHotel;Integrated Security=True";
             return conn;
         }
 

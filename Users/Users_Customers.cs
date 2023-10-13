@@ -78,7 +78,7 @@ namespace HotelManagementProgram.Users
                 if (control is DateTimePicker)
                 {
                     DateTimePicker dateTimePicker = (DateTimePicker)control;
-                   
+
                     dateTimePicker.ResetText();
                 }
             }
@@ -91,7 +91,7 @@ namespace HotelManagementProgram.Users
             {
                 if (control is Guna2TextBox textBox)
                 {
-                    if (string.IsNullOrEmpty(textBox.Text.Trim()) )
+                    if (string.IsNullOrEmpty(textBox.Text.Trim()))
                     {
                         isInformationFilled = false;
                         MessageBox.Show("Please fill all the information!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -151,7 +151,7 @@ namespace HotelManagementProgram.Users
                 fn.setData(query, "Successful customer booking!");
                 clearAll();
             }
-            
+
         }
     }
 }
