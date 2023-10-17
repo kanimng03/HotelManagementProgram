@@ -25,6 +25,7 @@ namespace HotelManagementProgram
         private void DashBoard_Load(object sender, EventArgs e)
         {
             users_AddRoom1.Visible = false;
+            user_payment1.Visible = false;
             btnRoom.PerformClick();
         }
 
@@ -38,6 +39,12 @@ namespace HotelManagementProgram
         {
             users_Customers1.Visible = true;
             users_Customers1.BringToFront();
+        }
+
+        private void btnPayment_Click(object sender, EventArgs e)
+        {
+            user_payment1.Visible = true;
+            user_payment1.BringToFront();
         }
     }
 }

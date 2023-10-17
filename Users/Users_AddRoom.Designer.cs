@@ -173,7 +173,7 @@
             this.txtRNum.BorderRadius = 24;
             this.txtRNum.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.txtRNum.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtRNum.DefaultText = "Enter Room Number";
+            this.txtRNum.DefaultText = "";
             this.txtRNum.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtRNum.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtRNum.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -186,7 +186,7 @@
             this.txtRNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRNum.Name = "txtRNum";
             this.txtRNum.PasswordChar = '\0';
-            this.txtRNum.PlaceholderText = "";
+            this.txtRNum.PlaceholderText = "Enter Room Number";
             this.txtRNum.SelectedText = "";
             this.txtRNum.Size = new System.Drawing.Size(257, 50);
             this.txtRNum.TabIndex = 7;
@@ -240,7 +240,7 @@
             this.txtPrice.AutoRoundedCorners = true;
             this.txtPrice.BorderRadius = 24;
             this.txtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPrice.DefaultText = "Enter Price";
+            this.txtPrice.DefaultText = "";
             this.txtPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -253,7 +253,7 @@
             this.txtPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.PasswordChar = '\0';
-            this.txtPrice.PlaceholderText = "";
+            this.txtPrice.PlaceholderText = "Enter Price";
             this.txtPrice.SelectedText = "";
             this.txtPrice.Size = new System.Drawing.Size(257, 50);
             this.txtPrice.TabIndex = 10;

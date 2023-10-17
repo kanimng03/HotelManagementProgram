@@ -80,11 +80,11 @@
     <Compile Include="Users\Users_Customers.Designer.cs">
       <DependentUpon>Users_Customers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Users\Users_Pay.cs">
+    <Compile Include="Users\User_payment.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Users\Users_Pay.Designer.cs">
-      <DependentUpon>Users_Pay.cs</DependentUpon>
+    <Compile Include="Users\User_payment.Designer.cs">
+      <DependentUpon>User_payment.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
@@ -108,8 +108,8 @@
     <EmbeddedResource Include="Users\Users_Customers.resx">
       <DependentUpon>Users_Customers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Users\Users_Pay.resx">
-      <DependentUpon>Users_Pay.cs</DependentUpon>
+    <EmbeddedResource Include="Users\User_payment.resx">
+      <DependentUpon>User_payment.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -38,10 +38,12 @@
             this.btnCustomer = new Guna.UI2.WinForms.Guna2Button();
             this.btnRoom = new Guna.UI2.WinForms.Guna2Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.users_Customers1 = new HotelManagementProgram.Users.Users_Customers();
-            this.users_AddRoom1 = new HotelManagementProgram.Users.Users_AddRoom();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.user_payment1 = new HotelManagementProgram.Users.User_payment();
+            this.users_Customers1 = new HotelManagementProgram.Users.Users_Customers();
+            this.users_AddRoom1 = new HotelManagementProgram.Users.Users_AddRoom();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -111,6 +113,7 @@
             this.btnPayment.Size = new System.Drawing.Size(284, 59);
             this.btnPayment.TabIndex = 3;
             this.btnPayment.Text = "Payment";
+            this.btnPayment.Click += new System.EventHandler(this.btnPayment_Click);
             // 
             // btnService
             // 
@@ -181,12 +184,34 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.user_payment1);
             this.panel3.Controls.Add(this.users_Customers1);
             this.panel3.Controls.Add(this.users_AddRoom1);
             this.panel3.Location = new System.Drawing.Point(426, 144);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1196, 789);
             this.panel3.TabIndex = 4;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.TargetControl = this;
+            // 
+            // user_payment1
+            // 
+            this.user_payment1.BackColor = System.Drawing.Color.AliceBlue;
+            this.user_payment1.ForeColor = System.Drawing.Color.Black;
+            this.user_payment1.Location = new System.Drawing.Point(-2, -2);
+            this.user_payment1.Name = "user_payment1";
+            this.user_payment1.Size = new System.Drawing.Size(1196, 687);
+            this.user_payment1.TabIndex = 6;
             // 
             // users_Customers1
             // 
@@ -204,14 +229,6 @@
             this.users_AddRoom1.Name = "users_AddRoom1";
             this.users_AddRoom1.Size = new System.Drawing.Size(1196, 964);
             this.users_AddRoom1.TabIndex = 5;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.TargetControl = this;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.TargetControl = this;
             // 
             // DashBoard
             // 
@@ -249,5 +266,7 @@
         private Users.Users_AddRoom users_AddRoom1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Users.Users_Customers users_Customers1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private Users.User_payment user_payment1;
     }
 }
