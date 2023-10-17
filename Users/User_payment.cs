@@ -36,7 +36,7 @@ namespace HotelManagementProgram.Users
 
         private void dgvCheckout_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgvCheckout.Rows[e.RowIndex].Cells[e.RowIndex].Value != null);
+            if (dgvCheckout.Rows[e.RowIndex].Cells[e.RowIndex].Value != null)
             {
                 id = int.Parse(dgvCheckout.Rows[e.RowIndex].Cells[0].Value.ToString());
                 txtCName.Text = dgvCheckout.Rows[e.RowIndex].Cells[1].Value.ToString();
