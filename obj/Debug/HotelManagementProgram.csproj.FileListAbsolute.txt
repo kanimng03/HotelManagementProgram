@@ -1,0 +1,9 @@
+D:\phát triển ứng dựng desktop\HotelManagementProgram\obj\Debug\HotelManagementProgram.csproj.AssemblyReference.cache
+D:\phát triển ứng dựng desktop\HotelManagementProgram\obj\Debug\HotelManagementProgram.DashBoard.resources
+D:\phát triển ứng dựng desktop\HotelManagementProgram\obj\Debug\HotelManagementProgram.Form1.resources
+D:\phát triển ứng dựng desktop\HotelManagementProgram\obj\Debug\HotelManagementProgram.Properties.Resources.resources
+D:\phát triển ứng dựng desktop\HotelManagementProgram\obj\Debug\HotelManagementProgram.Users.Users_AddRoom.resources
+D:\phát triển ứng dựng desktop\HotelManagementProgram\obj\Debug\HotelManagementProgram.Users.Users_Customers.resources
+D:\phát triển ứng dựng desktop\HotelManagementProgram\obj\Debug\HotelManagementProgram.Users.Users_Pay.resources
+D:\phát triển ứng dựng desktop\HotelManagementProgram\obj\Debug\HotelManagementProgram.csproj.GenerateResource.cache
+D:\phát triển ứng dựng desktop\HotelManagementProgram\obj\Debug\HotelManagementProgram.csproj.CoreCompileInputs.cache
