@@ -34,16 +34,18 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnPayment = new Guna.UI2.WinForms.Guna2Button();
-            this.btnService = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCusInf = new Guna.UI2.WinForms.Guna2Button();
             this.btnCustomer = new Guna.UI2.WinForms.Guna2Button();
             this.btnRoom = new Guna.UI2.WinForms.Guna2Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.user_payment1 = new HotelManagementProgram.Users.User_payment();
             this.users_Customers1 = new HotelManagementProgram.Users.Users_Customers();
             this.users_AddRoom1 = new HotelManagementProgram.Users.Users_AddRoom();
+            this.user_CusInf1 = new HotelManagementProgram.Users.User_CusInf();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -85,7 +87,7 @@
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.btnPayment);
-            this.panel1.Controls.Add(this.btnService);
+            this.panel1.Controls.Add(this.btnCusInf);
             this.panel1.Controls.Add(this.btnCustomer);
             this.panel1.Controls.Add(this.btnRoom);
             this.panel1.Location = new System.Drawing.Point(0, 144);
@@ -115,26 +117,27 @@
             this.btnPayment.Text = "Payment";
             this.btnPayment.Click += new System.EventHandler(this.btnPayment_Click);
             // 
-            // btnService
+            // btnCusInf
             // 
-            this.btnService.BackColor = System.Drawing.Color.Transparent;
-            this.btnService.BorderColor = System.Drawing.Color.Silver;
-            this.btnService.BorderRadius = 18;
-            this.btnService.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnService.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnService.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnService.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnService.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnService.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnService.ForeColor = System.Drawing.Color.White;
-            this.btnService.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnService.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnService.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnService.Location = new System.Drawing.Point(10, 156);
-            this.btnService.Name = "btnService";
-            this.btnService.Size = new System.Drawing.Size(284, 59);
-            this.btnService.TabIndex = 2;
-            this.btnService.Text = "Service";
+            this.btnCusInf.BackColor = System.Drawing.Color.Transparent;
+            this.btnCusInf.BorderColor = System.Drawing.Color.Silver;
+            this.btnCusInf.BorderRadius = 18;
+            this.btnCusInf.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCusInf.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCusInf.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCusInf.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCusInf.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnCusInf.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCusInf.ForeColor = System.Drawing.Color.White;
+            this.btnCusInf.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCusInf.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnCusInf.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnCusInf.Location = new System.Drawing.Point(10, 156);
+            this.btnCusInf.Name = "btnCusInf";
+            this.btnCusInf.Size = new System.Drawing.Size(284, 59);
+            this.btnCusInf.TabIndex = 2;
+            this.btnCusInf.Text = "Customer Infomation";
+            this.btnCusInf.Click += new System.EventHandler(this.btnCusInf_Click);
             // 
             // btnCustomer
             // 
@@ -155,7 +158,7 @@
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.Size = new System.Drawing.Size(284, 59);
             this.btnCustomer.TabIndex = 1;
-            this.btnCustomer.Text = "Customer";
+            this.btnCustomer.Text = "Customer Registration";
             this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
             // 
             // btnRoom
@@ -184,6 +187,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.user_CusInf1);
             this.panel3.Controls.Add(this.user_payment1);
             this.panel3.Controls.Add(this.users_Customers1);
             this.panel3.Controls.Add(this.users_AddRoom1);
@@ -203,6 +207,10 @@
             // guna2Elipse3
             // 
             this.guna2Elipse3.TargetControl = this;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.TargetControl = this;
             // 
             // user_payment1
             // 
@@ -229,6 +237,14 @@
             this.users_AddRoom1.Name = "users_AddRoom1";
             this.users_AddRoom1.Size = new System.Drawing.Size(1196, 964);
             this.users_AddRoom1.TabIndex = 5;
+            // 
+            // user_CusInf1
+            // 
+            this.user_CusInf1.BackColor = System.Drawing.Color.AliceBlue;
+            this.user_CusInf1.Location = new System.Drawing.Point(-2, -2);
+            this.user_CusInf1.Name = "user_CusInf1";
+            this.user_CusInf1.Size = new System.Drawing.Size(1196, 687);
+            this.user_CusInf1.TabIndex = 7;
             // 
             // DashBoard
             // 
@@ -259,7 +275,7 @@
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2Button btnRoom;
         private Guna.UI2.WinForms.Guna2Button btnPayment;
-        private Guna.UI2.WinForms.Guna2Button btnService;
+        private Guna.UI2.WinForms.Guna2Button btnCusInf;
         private Guna.UI2.WinForms.Guna2Button btnCustomer;
         private System.Windows.Forms.Panel panel3;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
@@ -268,5 +284,7 @@
         private Users.Users_Customers users_Customers1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private Users.User_payment user_payment1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+        private Users.User_CusInf user_CusInf1;
     }
 }

@@ -15,7 +15,7 @@ namespace HotelManagementProgram
         protected SqlConnection getConnection()
         {
             SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = "Data Source=DESKTOP-CEKF3RJ\\HUY;Initial Catalog=dbMyHotel;Integrated Security=True";
+            conn.ConnectionString = "Data Source=CONGDUYYYY\\KIMNGAN;Initial Catalog=HMP;Integrated Security=True";
             return conn;
         }
 
