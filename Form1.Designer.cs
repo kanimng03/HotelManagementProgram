@@ -135,7 +135,6 @@
             this.txtUser.SelectedText = "";
             this.txtUser.Size = new System.Drawing.Size(415, 67);
             this.txtUser.TabIndex = 3;
-            this.txtUser.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // guna2HtmlLabel1
             // 

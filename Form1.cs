@@ -12,18 +12,22 @@ namespace HotelManagementProgram
 {
     public partial class Form1 : Form
     {
+        function fn = new function();
+        string query;
         public Form1()
         {
             InitializeComponent();
         }
         private void Login()
         {
-            if (txtUser.Text == "KN" && txtPass.Text == "123")
+            query = "select username, password from employee where username = '"+txtUser.Text+"' and password = '"+txtPass.Text+"' ";
+            DataSet ds = fn.getData(query);
+            if (ds.Tables[0].Rows.Count != 0)
             {
                 lblError.Visible = false;
-                DashBoard ds = new DashBoard();
+                DashBoard dash = new DashBoard();
                 this.Hide();
-                ds.Show();
+                dash.Show();
             }
             else
             {
@@ -48,16 +52,5 @@ namespace HotelManagementProgram
             Application.Exit();
         }
         
-        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-       
     }
 }

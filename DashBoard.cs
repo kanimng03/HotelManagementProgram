@@ -28,6 +28,7 @@ namespace HotelManagementProgram
             user_payment1.Visible = false;
             users_Customers1.Visible = false;
             user_CusInf1.Visible = false;
+            users_Employee1.Visible = false;
             btnRoom.PerformClick();
         }
 
@@ -53,6 +54,12 @@ namespace HotelManagementProgram
         {
             user_CusInf1.Visible = true;
             user_CusInf1.BringToFront();
+        }
+
+        private void btnEmployee_Click(object sender, EventArgs e)
+        {
+            users_Employee1.Visible = true;
+            users_Employee1.BringToFront();
         }
     }
 }

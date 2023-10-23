@@ -33,19 +33,22 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnEmployee = new Guna.UI2.WinForms.Guna2Button();
             this.btnPayment = new Guna.UI2.WinForms.Guna2Button();
             this.btnCusInf = new Guna.UI2.WinForms.Guna2Button();
             this.btnCustomer = new Guna.UI2.WinForms.Guna2Button();
             this.btnRoom = new Guna.UI2.WinForms.Guna2Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.users_Employee1 = new HotelManagementProgram.Users.Users_Employee();
+            this.user_CusInf1 = new HotelManagementProgram.Users.User_CusInf();
+            this.user_payment1 = new HotelManagementProgram.Users.User_payment();
+            this.users_Customers1 = new HotelManagementProgram.Users.Users_Customers();
+            this.users_AddRoom1 = new HotelManagementProgram.Users.Users_AddRoom();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.user_payment1 = new HotelManagementProgram.Users.User_payment();
-            this.users_Customers1 = new HotelManagementProgram.Users.Users_Customers();
-            this.users_AddRoom1 = new HotelManagementProgram.Users.Users_AddRoom();
-            this.user_CusInf1 = new HotelManagementProgram.Users.User_CusInf();
+            this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -86,6 +89,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.btnEmployee);
             this.panel1.Controls.Add(this.btnPayment);
             this.panel1.Controls.Add(this.btnCusInf);
             this.panel1.Controls.Add(this.btnCustomer);
@@ -94,6 +98,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(315, 964);
             this.panel1.TabIndex = 2;
+            // 
+            // btnEmployee
+            // 
+            this.btnEmployee.BackColor = System.Drawing.Color.Transparent;
+            this.btnEmployee.BorderColor = System.Drawing.Color.Silver;
+            this.btnEmployee.BorderRadius = 18;
+            this.btnEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEmployee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnEmployee.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmployee.ForeColor = System.Drawing.Color.White;
+            this.btnEmployee.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnEmployee.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnEmployee.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnEmployee.Location = new System.Drawing.Point(10, 286);
+            this.btnEmployee.Name = "btnEmployee";
+            this.btnEmployee.Size = new System.Drawing.Size(284, 59);
+            this.btnEmployee.TabIndex = 4;
+            this.btnEmployee.Text = "Employee";
+            this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
             // 
             // btnPayment
             // 
@@ -187,6 +213,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.users_Employee1);
             this.panel3.Controls.Add(this.user_CusInf1);
             this.panel3.Controls.Add(this.user_payment1);
             this.panel3.Controls.Add(this.users_Customers1);
@@ -196,21 +223,21 @@
             this.panel3.Size = new System.Drawing.Size(1196, 789);
             this.panel3.TabIndex = 4;
             // 
-            // guna2Elipse1
+            // users_Employee1
             // 
-            this.guna2Elipse1.TargetControl = this;
+            this.users_Employee1.BackColor = System.Drawing.Color.AliceBlue;
+            this.users_Employee1.Location = new System.Drawing.Point(-2, -2);
+            this.users_Employee1.Name = "users_Employee1";
+            this.users_Employee1.Size = new System.Drawing.Size(1196, 687);
+            this.users_Employee1.TabIndex = 8;
             // 
-            // guna2Elipse2
+            // user_CusInf1
             // 
-            this.guna2Elipse2.TargetControl = this;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.TargetControl = this;
-            // 
-            // guna2Elipse4
-            // 
-            this.guna2Elipse4.TargetControl = this;
+            this.user_CusInf1.BackColor = System.Drawing.Color.AliceBlue;
+            this.user_CusInf1.Location = new System.Drawing.Point(-2, -2);
+            this.user_CusInf1.Name = "user_CusInf1";
+            this.user_CusInf1.Size = new System.Drawing.Size(1196, 687);
+            this.user_CusInf1.TabIndex = 7;
             // 
             // user_payment1
             // 
@@ -238,13 +265,25 @@
             this.users_AddRoom1.Size = new System.Drawing.Size(1196, 964);
             this.users_AddRoom1.TabIndex = 5;
             // 
-            // user_CusInf1
+            // guna2Elipse1
             // 
-            this.user_CusInf1.BackColor = System.Drawing.Color.AliceBlue;
-            this.user_CusInf1.Location = new System.Drawing.Point(-2, -2);
-            this.user_CusInf1.Name = "user_CusInf1";
-            this.user_CusInf1.Size = new System.Drawing.Size(1196, 687);
-            this.user_CusInf1.TabIndex = 7;
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.TargetControl = this;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.TargetControl = this;
+            // 
+            // guna2Elipse5
+            // 
+            this.guna2Elipse5.TargetControl = this;
             // 
             // DashBoard
             // 
@@ -286,5 +325,8 @@
         private Users.User_payment user_payment1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private Users.User_CusInf user_CusInf1;
+        private Guna.UI2.WinForms.Guna2Button btnEmployee;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
+        private Users.Users_Employee users_Employee1;
     }
 }
