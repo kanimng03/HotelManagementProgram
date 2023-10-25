@@ -20,12 +20,12 @@ namespace HotelManagementProgram
         }
         private void Login()
         {
-            query = "select username, password from employee where username = '"+txtUser.Text+"' and password = '"+txtPass.Text+"' ";
+            query = "select role from employee where username = '"+txtUser.Text+"' and password = '"+txtPass.Text+"' ";
             DataSet ds = fn.getData(query);
             if (ds.Tables[0].Rows.Count != 0)
             {
                 lblError.Visible = false;
-                DashBoard dash = new DashBoard();
+                DashBoard dash = new DashBoard(ds);
                 this.Hide();
                 dash.Show();
             }

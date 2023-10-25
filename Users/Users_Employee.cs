@@ -24,7 +24,7 @@ namespace HotelManagementProgram.Users
 
         //public void getRole()
         //{
-        //    query = "select role from employee";
+        //    query = "select role from employee where username = 'drkhaik'";
         //    DataSet ds = fn.getData(query);
 
         //    if (ds.Tables[0].Rows[0][0].ToString() != "")
@@ -42,6 +42,7 @@ namespace HotelManagementProgram.Users
 
         private void Users_Employee_Load(object sender, EventArgs e)
         {
+            //getRole();
             getEmployee();
         }
 

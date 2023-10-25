@@ -42,5 +42,18 @@ namespace HotelManagementProgram.Users
             DataSet ds = fn.getData(query);
             dgvCusInf.DataSource = ds.Tables[0];
         }
+
+        private void User_CusInf_Load(object sender, EventArgs e)
+        {
+            query = "select customer.cid, customer.cname, customer.mobile, customer.nationality, customer.gender, customer.dob, customer.idproof, customer.address, customer.checkin, rooms.roomNo, rooms.roomType, rooms.bed, rooms.price from customer inner join rooms on customer.roomid = rooms.roomid";
+            getRecord(query);
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            query = "SELECT customer.cid, customer.cname, customer.mobile, customer.nationality, customer.gender, customer.dob, customer.idproof, customer.address, customer.checkin, rooms.roomNo, rooms.roomType, rooms.bed, rooms.price FROM customer inner join rooms on customer.roomid = rooms.roomid " +
+                "WHERE checkin >= '"+ dtpFrom.Value.ToString("yyyy/MM/dd") + "' and checkin <= '"+ dtpTo.Value.ToString("yyyy/MM/dd") +"' ";
+            getRecord(query);
+        }
     }
 }

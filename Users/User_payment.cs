@@ -39,40 +39,54 @@ namespace HotelManagementProgram.Users
             if (dgvCheckout.Rows[e.RowIndex].Cells[e.RowIndex].Value != null)
             {
                 id = int.Parse(dgvCheckout.Rows[e.RowIndex].Cells[0].Value.ToString());
-                txtCName.Text = dgvCheckout.Rows[e.RowIndex].Cells[1].Value.ToString();
-                txtName.Text = dgvCheckout.Rows[e.RowIndex].Cells[2].Value.ToString();
+                txtFullname.Text = dgvCheckout.Rows[e.RowIndex].Cells[1].Value.ToString();
+                txtRoomNumber.Text = dgvCheckout.Rows[e.RowIndex].Cells[9].Value.ToString();
+                txtRoomType.Text = dgvCheckout.Rows[e.RowIndex].Cells[10].Value.ToString();
+                txtRoomPrice.Text = dgvCheckout.Rows[e.RowIndex].Cells[12].Value.ToString();
+                txtCheckinDate.Text = dgvCheckout.Rows[e.RowIndex].Cells[8].Value.ToString();
             }
+
         }
 
         private void btnCheckout_Click(object sender, EventArgs e)
         {
-            if (txtCName.Text != "")
+            if (txtFullname.Text != "")
             {
-                if(MessageBox.Show("Are You Sure?", "Confirm",MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                if (MessageBox.Show("Are You Sure To Checkout?", "Confirm", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
                 {
                     string cdate = dtpCheckout.Text;
-                    query = "update customer set checkout_payment = 'YES', checkout_date = '" + cdate + "' where cid = " + id + " update rooms set booked = 'NO' where roomNO = '" + txtRoom.Text + "'";
+                    query = "update customer set checkout_payment = 'YES', checkout_date = '" + cdate + "' where cid = " + id + " update rooms set booked = 'NO' where roomNO = '" + txtCheckinDate.Text + "'";
                     fn.setData(query, "Payment Success");
+                    Bill bill = new Bill(txtFullname.Text, txtRoomNumber.Text, txtRoomPrice.Text, txtCheckinDate.Text, cdate);
+                    bill.ShowDialog();
                     User_payment_Load(this, null);
                     clearAll();
                 }
-            }else
+            }
+            else
             {
-                MessageBox.Show("There are no customers to pay", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("There are no customers to checkout", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
         public void clearAll()
         {
-            txtCName.Clear();
-            txtName.Clear();
-            txtRoom.Clear();
+            txtFullname.Clear();
+            txtRoomNumber.Clear();
+            txtRoomType.Clear();
+            txtRoomPrice.Clear();
+            txtCheckinDate.Clear();
             dtpCheckout.ResetText();
         }
 
         private void User_payment_Leave(object sender, EventArgs e)
         {
             clearAll();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

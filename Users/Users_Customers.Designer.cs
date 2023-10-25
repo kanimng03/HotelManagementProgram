@@ -145,7 +145,7 @@
             // txtPrice
             // 
             this.txtPrice.AutoRoundedCorners = true;
-            this.txtPrice.BorderRadius = 24;
+            this.txtPrice.BorderRadius = 19;
             this.txtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPrice.DefaultText = "";
             this.txtPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -163,7 +163,7 @@
             this.txtPrice.PlaceholderText = "";
             this.txtPrice.ReadOnly = true;
             this.txtPrice.SelectedText = "";
-            this.txtPrice.Size = new System.Drawing.Size(257, 50);
+            this.txtPrice.Size = new System.Drawing.Size(244, 41);
             this.txtPrice.TabIndex = 40;
             // 
             // cbBedType
@@ -259,6 +259,7 @@
             this.txtCheckin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.txtCheckin.BorderRadius = 17;
             this.txtCheckin.Checked = true;
+            this.txtCheckin.CustomFormat = "dd/MM/yyyy";
             this.txtCheckin.FillColor = System.Drawing.Color.White;
             this.txtCheckin.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtCheckin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -269,7 +270,7 @@
             this.txtCheckin.Name = "txtCheckin";
             this.txtCheckin.Size = new System.Drawing.Size(264, 36);
             this.txtCheckin.TabIndex = 33;
-            this.txtCheckin.Value = new System.DateTime(2023, 10, 7, 0, 47, 39, 76);
+            this.txtCheckin.Value = new System.DateTime(2023, 10, 25, 0, 0, 0, 0);
             // 
             // label9
             // 
@@ -297,6 +298,7 @@
             this.txtDOB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.txtDOB.BorderRadius = 17;
             this.txtDOB.Checked = true;
+            this.txtDOB.CustomFormat = "dd/MM/yyyy";
             this.txtDOB.FillColor = System.Drawing.Color.White;
             this.txtDOB.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtDOB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -307,7 +309,7 @@
             this.txtDOB.Name = "txtDOB";
             this.txtDOB.Size = new System.Drawing.Size(273, 36);
             this.txtDOB.TabIndex = 30;
-            this.txtDOB.Value = new System.DateTime(2023, 10, 7, 0, 55, 23, 333);
+            this.txtDOB.Value = new System.DateTime(2003, 1, 1, 0, 0, 0, 0);
             // 
             // txtNation
             // 

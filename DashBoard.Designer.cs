@@ -108,13 +108,13 @@
             this.btnEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEmployee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnEmployee.FillColor = System.Drawing.Color.SlateBlue;
             this.btnEmployee.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmployee.ForeColor = System.Drawing.Color.White;
             this.btnEmployee.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnEmployee.ImageSize = new System.Drawing.Size(50, 50);
             this.btnEmployee.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnEmployee.Location = new System.Drawing.Point(10, 286);
+            this.btnEmployee.Location = new System.Drawing.Point(10, 221);
             this.btnEmployee.Name = "btnEmployee";
             this.btnEmployee.Size = new System.Drawing.Size(284, 59);
             this.btnEmployee.TabIndex = 4;
@@ -130,13 +130,13 @@
             this.btnPayment.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnPayment.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnPayment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPayment.FillColor = System.Drawing.Color.SlateBlue;
+            this.btnPayment.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnPayment.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPayment.ForeColor = System.Drawing.Color.White;
             this.btnPayment.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPayment.ImageSize = new System.Drawing.Size(50, 50);
             this.btnPayment.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnPayment.Location = new System.Drawing.Point(10, 221);
+            this.btnPayment.Location = new System.Drawing.Point(10, 156);
             this.btnPayment.Name = "btnPayment";
             this.btnPayment.Size = new System.Drawing.Size(284, 59);
             this.btnPayment.TabIndex = 3;
@@ -158,11 +158,11 @@
             this.btnCusInf.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCusInf.ImageSize = new System.Drawing.Size(50, 50);
             this.btnCusInf.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnCusInf.Location = new System.Drawing.Point(10, 156);
+            this.btnCusInf.Location = new System.Drawing.Point(10, 286);
             this.btnCusInf.Name = "btnCusInf";
             this.btnCusInf.Size = new System.Drawing.Size(284, 59);
             this.btnCusInf.TabIndex = 2;
-            this.btnCusInf.Text = "Customer Infomation";
+            this.btnCusInf.Text = "Statiѕtic";
             this.btnCusInf.Click += new System.EventHandler(this.btnCusInf_Click);
             // 
             // btnCustomer

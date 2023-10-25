@@ -65,5 +65,10 @@ namespace HotelManagementProgram.Users
         {
             Users_AddRoom_Load(this, null);
         }
+
+        private void dgvRoom_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

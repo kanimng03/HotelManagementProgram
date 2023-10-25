@@ -27,8 +27,16 @@ namespace HotelManagementProgram
             cmd.CommandText = query;
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
-            sda.Fill(ds);
-            return ds;
+            if(ds != null)
+            {
+                sda.Fill(ds);
+                return ds;
+            }    
+            else
+            {
+                MessageBox.Show("Something went wrong...", "Info");
+                return null;
+            }
         }
 
         public void setData(String query, String message)
