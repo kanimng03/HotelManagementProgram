@@ -20,7 +20,7 @@ namespace HotelManagementProgram
         }
         private void Login()
         {
-            query = "select role from employee where username = '"+txtUser.Text+"' and password = '"+txtPass.Text+"' ";
+            query = "select role from employee where username = '"+txtUser.Text+"' and pass = '"+txtPass.Text+"' ";
             DataSet ds = fn.getData(query);
             if (ds.Tables[0].Rows.Count != 0)
             {
