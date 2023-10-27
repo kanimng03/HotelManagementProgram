@@ -55,7 +55,7 @@ namespace HotelManagementProgram.Users
                 if (MessageBox.Show("Are You Sure To Checkout?", "Confirm", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
                 {
                     string cdate = dtpCheckout.Text;
-                    query = "update customer set checkout_payment = 'YES', checkout_date = '" + cdate + "' where cid = " + id + " update rooms set booked = 'NO' where roomNO = '" + txtCheckinDate.Text + "'";
+                    query = "update customer set checkout_payment = 'YES', checkout_date = '" + cdate + "' where cid = " + id + " ";
                     fn.setData(query, "Payment Success");
                     Bill bill = new Bill(txtFullname.Text, txtRoomNumber.Text, txtRoomPrice.Text, txtCheckinDate.Text, cdate);
                     bill.ShowDialog();

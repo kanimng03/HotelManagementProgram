@@ -48,7 +48,7 @@ namespace HotelManagementProgram.Users
         private void txtBType_SelectedIndexChanged(object sender, EventArgs e)
         {
             cbRoomNo.Items.Clear();
-            query = "select roomNo from rooms where bed = '" + cbBedType.Text + "' and roomType = '" + cbRoomType.Text + "' and booked = 'NO'";
+            query = "select roomNo from rooms where bed = '" + cbBedType.Text + "' and roomType = '" + cbRoomType.Text + "'";
             setComboBox(query, cbRoomNo);
         }
 
@@ -145,8 +145,7 @@ namespace HotelManagementProgram.Users
                 string address = txtAddress.Text;
 
                 query = "insert into customer (cname, mobile, nationality, gender, dob, idproof, address, checkin, roomid) " +
-                    "values ('" + name + "'," + mobile + ", '" + nation + "', '" + gender + "','" + dob + "','" + idCard + "','" + address + "','" + checkinDate + "'," + roomId + ") " +
-                    "update rooms set booked = 'YES' where roomNo =  '" + cbRoomNo.Text + "'  ";
+                    "values ('" + name + "'," + mobile + ", '" + nation + "', '" + gender + "','" + dob + "','" + idCard + "','" + address + "','" + checkinDate + "'," + roomId + ") ";
 
                 fn.setData(query, "Successful customer booking!");
                 clearAll();

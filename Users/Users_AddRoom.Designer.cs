@@ -206,8 +206,10 @@
             this.txtRType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtRType.ItemHeight = 30;
             this.txtRType.Items.AddRange(new object[] {
-            "Active",
-            "Non-active"});
+            "Standard",
+            "Superior",
+            "Deluxe",
+            "Suite"});
             this.txtRType.Location = new System.Drawing.Point(47, 251);
             this.txtRType.Name = "txtRType";
             this.txtRType.Size = new System.Drawing.Size(257, 36);
